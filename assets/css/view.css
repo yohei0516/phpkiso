@@ -1,0 +1,101 @@
+body{
+    background-color: #efefef;}
+
+form {
+    margin-left: 80px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+form p {
+    margin-top: 0px;
+    margin-bottom: 1px;
+}
+
+h1{
+    margin-left: 80px;
+    color: #2a6496;
+    }
+
+hr.underline{
+    margin: 20px 20px;    
+    }
+
+tfoot {
+    text-align: right;
+}
+
+table.yokonarabi{
+    float:left;
+    margin-right: 20px;
+    margin-left:60px;
+    margin-bottom:20px;
+    background-color:;
+    width:600px;
+}
+
+tbody.company {
+    width: 600px;
+    /*margin: 0 auto;*/
+    border-collapse: separate;
+    border-spacing: 0px 2px; /*列間の幅*/
+    font-size: 12px;
+}
+ 
+/*表の幅*/
+tbody.company th,
+tbody.company td {
+    padding: 10px;
+}
+ 
+tbody.company th {
+    background: #2a6496;
+    vertical-align: middle;
+    text-align: left;
+    width: 100px;
+    overflow: visible;
+    position: relative;
+    color: #fff;
+    font-weight: normal;
+    font-size: 15px;
+}
+ 
+/*項目部分スタイル*/
+tbody.company th:after {
+    left: 100%;
+    top: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(136, 183, 213, 0);
+    border-left-color: #295890;
+    border-width: 10px;
+    margin-top: -10px;
+}
+/* firefox */
+/*@-moz-document url-prefix() {
+    table.company th::after {
+        float: right;
+        padding: 0;
+        left: 30px;
+        top: 10px;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: relative;
+        pointer-events: none;
+        border: 10px solid transparent;
+        border-left: #295890 10px solid;
+        margin-top: -10px;
+    }
+}*/
+
+/*詳細部分スタイル*/
+tbody.company td {
+    background: #f8f8f8;
+/*    width: 360px;*/
+    padding-left: 20px;
+}
